@@ -1,16 +1,23 @@
-# This is a sample Python script.
+import matplotlib.pyplot as plt
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+plt.axes([0.1, 0.1, .5, .5])
+plt.xticks([]), plt.yticks([])
+plt.text(0.1, 0.1, 'axes([0.1,0.1,.5,.5])', ha='left', va='center', size=16, alpha=.5)
+
+plt.axes([0.2, 0.2, .5, .5])
+plt.xticks([]), plt.yticks([])
+plt.text(0.1, 0.1, 'axes([0.2,0.2,.5,.5])', ha='left', va='center', size=16, alpha=.5)
+
+plt.axes([0.3, 0.3, .5, .5])
+plt.xticks([]), plt.yticks([])
+plt.text(0.1, 0.1, 'axes([0.3,0.3,.5,.5])', ha='left', va='center', size=16, alpha=.5)
+
+plt.axes([0.4, 0.4, .5, .5])
+plt.xticks([]), plt.yticks([])
+plt.text(0.1, 0.1, 'axes([0.4,0.4,.5,.5])', ha='left', va='center', size=16, alpha=.5)
+
+# plt.savefig("../figures/axes-2.png",dpi=64)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    plt.show()
